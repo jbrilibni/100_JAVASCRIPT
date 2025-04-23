@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title> Kubus</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f0f0;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    
+    .hasil {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Hitung Volume dan Luas</h2>
+  
+  <label for="sisi">Panjang Sisi (cm):</label>
+  <input type="number" id="sisi" placeholder="Masukkan panjang sisi">
+
+  <button onclick="hitungKubus()">Hitung</button>
+
+  <div class="hasil" id="hasil"></div>
+
+  <script src="program_kubus.js">
+
+  </script>

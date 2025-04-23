@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hitung Tabung</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      padding: 8px;
+      margin-top: 10px;
+      width: 100%;
+      font-size: 16px;
+    }
+    .hasil {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Hitung Volume & Luas Permukaan Tabung</h2>
+
+  <label for="jari">Jari-jari (cm):</label>
+  <input type="number" id="jari" placeholder="Masukkan jari-jari" />
+
+  <label for="tinggi">Tinggi (cm):</label>
+  <input type="number" id="tinggi" placeholder="Masukkan tinggi" />
+
+  <button onclick="hitungTabung()">Hitung</button>
+
+  <div class="hasil" id="hasil"></div>
+
+  <script src="PROGRAM_TABUNG.js">
+
+  </script>
