@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rumus Bola</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>RUMUS BOLA</h2>
+    <label for="radius">Masukkan jari-jari (cm):</label>
+    <input type="number" id="radius" step="any" />
+    <button onclick="hitungBola()">Hitung</button>
+    <div class="result" id="output"></div>
+  </div>
+
+  <script src="program_bola.js">
+   
+  </script>
+</body>
+</html>
