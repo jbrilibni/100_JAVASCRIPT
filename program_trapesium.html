@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Program Trapesium</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+    .box {
+      border: 2px solid #000;
+      padding: 20px;
+      max-width: 400px;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input {
+      width: 100%;
+      padding: 6px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>PROGRAM TRAPESIUM</h2>
+
+    <label for="s1">Sisi sejajar 1:</label>
+    <input type="number" id="s1">
+
+    <label for="s2">Sisi sejajar 2:</label>
+    <input type="number" id="s2">
+
+    <label for="s3">Sisi miring 1:</label>
+    <input type="number" id="s3">
+
+    <label for="s4">Sisi miring 2:</label>
+    <input type="number" id="s4">
+
+    <label for="t">Tinggi:</label>
+    <input type="number" id="t">
+
+    <button onclick="hitungTrapesium()">Hitung</button>
+
+    <div class="result" id="output"></div>
+  </div>
+  <script src="program_trapesium.js"></script>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Tebak Angka</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    .box {
+      border: 2px solid #000;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input {
+      padding: 8px;
+      margin: 10px;
+      width: 60%;
+    }
+    button {
+      padding: 10px 20px;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>--- GAME TEBAK ANGKA ---</h2>
+    <p>Masukkan angka antara 1 sampai 5</p>
+    <input type="number" id="guess" min="1" max="5">
+    <br>
+    <button onclick="tebakAngka()">Tebak!</button>
+    <div class="result" id="output"></div>
+  </div>
+  <script src="program_tebak_angka.js"></script>
