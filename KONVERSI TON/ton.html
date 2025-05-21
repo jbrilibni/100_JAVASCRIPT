@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Program Konversi Ton</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .hasil {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="color: red;">PROGRAM KONVERSI TON</h2>
+
+  <label for="ton">Masukkan Massa Ton:</label>
+  <input type="number" id="ton" placeholder="Masukkan">
+
+  <button onclick="konversiTon()">Konversi</button>
+
+  <div class="hasil" id="output">
+  </div>
+ <script src="ton.js"></script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jarak Lensa Teropong</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+    .hasil {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JARAK LENSA TEROPONG</h2>
+
+  <label for="fob" style="color:red;">Masukkan Fokus Lensa Objektif (mm):</label>
+  <input type="number" id="fob" placeholder="Masukkan">
+
+  <label for="fp" style="color: blue;">Masukkan Fokus Lensa Pembalik (mm):</label>
+  <input type="number" id="fp" placeholder="Masukkan">
+
+  <label for="fok" style="color: violet;">Masukkan Fokus Lensa Okuler (mm):</label>
+  <input type="number" id="fok" placeholder="Masukkan">
+
+  <button onclick="hitungJarak()">Hitung Panjang Teropong</button>
+
+  <div class="hasil" id="output"></div>
+
+  <script src="lensa.js"></script>

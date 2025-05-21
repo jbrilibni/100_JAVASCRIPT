@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Program Konversi Kilogram</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .hasil {
+      background-color: skyblue;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="color: red;">PROGRAM KONVERSI KILOGRAM</h2>
+
+  <label for="kg">Masukkan Massa Kilogram:</label>
+  <input type="number" id="kg" placeholder="contoh: 1.5">
+
+  <button onclick="konversi()">Konversi</button>
+
+  <div class="hasil" id="output">
+  </div>
+
+  <script src="kilogram.js"></script>

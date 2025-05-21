@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Program Mencari Waktu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h2 {
+      text-align: center;
+    }
+    label, input, button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    .hasil {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Program Mencari Waktu</h2>
+
+  <label for="jarak">Masukkan Jarak (S) dalam meter:</label>
+  <input type="number" id="jarak" placeholder="masukkan">
+
+  <label for="kecepatan">Masukkan Kecepatan (v) dalam m/s:</label>
+  <input type="number" id="kecepatan" placeholder="masukkan">
+
+  <button onclick="hitungWaktu()">Hitung Waktu</button>
+
+  <div class="hasil" id="output">
+  
+  </div>

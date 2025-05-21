@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Menentukan Kesehatan Tubuh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 8px;
+            font-size: 16px;
+            width: 300px;
+        }
+        h2 {
+            color: #333;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid #ccc;
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2><center>PROGRAM MENENTUKAN KESEHATAN TUBUH</center></h2>
+    <hr style="width: 400px; border: 2px solid #000;">
+
+    <label>Masukkan berat badan Anda (kg):</label><br>
+    <input type="number" id="berat" step="0.1"><br>
+
+    <label>Masukkan tinggi badan Anda (m):</label><br>
+    <input type="number" id="tinggi" step="0.01"><br>
+
+    <label>Masukkan usia Anda (tahun):</label><br>
+    <input type="number" id="usia"><br>
+
+    <button onclick="cekKesehatan()">Hitung BMI</button>
+
+    <div class="result" id="hasil"></div>
+
+    <script src="kesehatan_tubuh.js">
+
+    </script>

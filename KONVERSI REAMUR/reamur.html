@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Program Konversi Reamur</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      background-color: skyblue;
+    }
+    h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .hasil {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="color: whitesmoke;"> <b>PROGRAM KONVERSI REAMUR</b></h2>
+
+  <label for="reamur">Masukkan Suhu Reamur:</label>
+  <input type="number" id="reamur" placeholder="masukkan">
+
+  <button onclick="konversiReamur()">Konversi</button>
+
+  <div class="hasil" id="output">
+   
+  </div>
+  <script src="reamur.js"></script>
