@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Energi Listrik</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    .container {
+      background: white;
+      max-width: 450px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+    }
+    label {
+      margin-top: 10px;
+      display: block;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="color: red;"><b>Energi Listrik</b></h2>
+
+    <label for="q" style="color: rebeccapurple;"><b>Muatan Listrik (Coulomb):</b></label>
+    <input type="number" id="q" min="0">
+
+    <label for="v" style="color: blue;"> <b>Potensial Listrik (Volt)</b>:</label>
+    <input type="number" id="v" min="0">
+
+    <label for="l" style="color: deeppink;"> <b>Kuat Arus Listrik (Ampere):</b></label>
+    <input type="number" id="l" min="0">
+
+    <label for="r" style="color: cadetblue;"><b>Hambatan (Ohm):</b></label>
+    <input type="number" id="r" min="0">
+
+    <label for="t" style="color: darkolivegreen;"><b>Waktu (detik):</b></label>
+    <input type="number" id="t" min="0">
+
+    <button onclick="hitungEnergi()"><b>Hitung Energi</b></button>
+
+    <div id="output" class="result"></div>
+  </div>
+
+  <script src="listrik.js"></script>

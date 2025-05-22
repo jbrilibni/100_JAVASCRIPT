@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jarak Semut</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ecf0f1;
+      color: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      width: 360px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #2980b9;
+      margin-bottom: 20px;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #bdc3c7;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #34495e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2c3e50;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>JARAK SEMUT</h2>
+    <input type="number" id="cmInput" placeholder="Masukkan jarak dalam cm">
+    <button onclick="konversiJarak()">Hitung Jarak</button>
+    <div class="result" id="output"></div>
+  </div>
+
+  <script src="semut.js"></script>

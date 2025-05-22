@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Rumus Energi Potensial</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f3;
+      padding: 20px;
+    }
+    .container {
+      background: darkolivegreen;
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label, input, button {
+      width: 95%;
+      display: block;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    input, button {
+      padding: 10px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: aliceblue;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="color: aliceblue;"><b>Rumus Energi Potensial</b></h2>
+
+    <label for="massa" style="color: aliceblue;"><b>Masukkan massa benda (kg):</b></label>
+    <input type="number" id="massa" min="0">
+
+    <label for="tinggi" style="color: aliceblue;"><b>Masukkan ketinggian benda (m):</b></label>
+    <input type="number" id="tinggi" min="0">
+
+    <button onclick="hitungEnergiPotensial()"><b>Hitung Energi Potensial</b></button>
+
+    <div id="output" class="result"></div>
+  </div>
+
+  <script src="potensial.js"></script>

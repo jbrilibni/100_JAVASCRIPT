@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hari Besok</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;  
+      color: #4a4a4a;        
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #ffffff;   
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 20px;
+      font-weight: 600;
+      color: #3a86ff; 
+    }
+    input[type="text"] {
+      padding: 10px 12px;
+      width: 100%;
+      border: 2px solid #d0d7de;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+      outline: none;
+      color: #333;
+    }
+    input[type="text"]:focus {
+      border-color: #3a86ff;
+      box-shadow: 0 0 6px #3a86ff66;
+    }
+    button {
+      margin-top: 18px;
+      padding: 10px 0;
+      width: 100%;
+      border: none;
+      background: #3a86ff;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #2c6adf;
+    }
+    .result {
+      margin-top: 22px;
+      font-size: 18px;
+      font-weight: 600;
+      color: red; 
+      min-height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hari Besok</h2>
+    <input type="text" id="hari" placeholder="masukan nama hari (misal: senin)" />
+    <button onclick="cekHari()">Cek Hari Besok</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="besok.js"></script>

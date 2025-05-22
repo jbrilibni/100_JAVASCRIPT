@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diskon Belanja 25%</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 30px;
+    }
+
+    .container {
+      background-color: #2e3b4e; 
+      color: #f8f8f8;             
+      max-width: 500px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 95%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #388e3c;
+    }
+
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    .success {
+      background-color: #d0f0c0;
+      color: #2e7d32;
+    }
+
+    .fail {
+      background-color: #f8d7da;
+      color: #b71c1c;
+    }
+
+    .thanks {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Menentukan Diskon Belanja</h2>
+    <div class="note">
+      Diskon 25% berlaku jika total belanja lebih dari 100.000
+    </div>
+
+    <label for="total">Total Belanja (Rp):</label>
+    <input type="number" id="total" min="0" >
+
+    <button onclick="hitungDiskon()">Hitung</button>
+
+    <div id="output" class="result" style="display: none;"></div>
+    <div class="thanks">Hatur Thankyou</div>
+  </div>
+
+  <script src="diskon2.js"></script>

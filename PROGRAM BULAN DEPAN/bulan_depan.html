@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulan Depan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      background: darkblue;
+      max-width: 450px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 350px;
+      padding: 10px;
+      margin-top: 10px;
+      margin-right: 250px;
+      font-size: 16px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 style="color: aliceblue;"> <b>BULAN DEPAN</b></h2>
+
+    <input type="text" id="bulan" placeholder="Masukkan nama bulan ">
+    <button onclick="cariBulanDepan()">Cari Bulan Depan</button>
+
+    <div id="output" class="result" style="color: aliceblue;"></div>
+  </div>
+
+  <script src="bulan_depan.js"></script>

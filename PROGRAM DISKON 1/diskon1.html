@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diskon Belanja</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e3f2fd);
+      padding: 30px;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      max-width: 450px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 5px;
+      border: 2px solid #90caf9;
+      border-radius: 8px;
+      box-sizing: border-box;
+      transition: 0.3s;
+    }
+
+    input[type="number"]:focus {
+      border-color: #42a5f5;
+      outline: none;
+    }
+
+    button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #42a5f5;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1e88e5;
+    }
+
+    .result {
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #2e7d32;
+      text-align: center;
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #c8e6c9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Diskon Belanja</h2>
+
+    <label for="totalHarga">Masukkan Total Harga (Rp):</label>
+    <input type="number" id="totalHarga" min="0" step="0.01" placeholder="masukkan harga">
+
+    <button onclick="hitungDiskon()">Hitung Diskon</button>
+
+    <div id="output" class="result" style="display:none;"></div>
+  </div>
+
+  <script src="diskon1.js"></script>

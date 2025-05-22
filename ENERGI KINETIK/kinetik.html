@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menghitung Energi Kinetik</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+    .container {
+      background: #fff;
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    input, button {
+      padding: 10px;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+      color: green;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Menghitung Energi Kinetik</h2>
+
+    <label for="massa" style="color: red;"><b>Masukkan massa (kg)</b>:</label>
+    <input type="number" id="massa" min="0">
+
+    <label for="kecepatan" style="color: red;"><b>Masukkan kecepatan (m/s):</b></label>
+    <input type="number" id="kecepatan" min="0">
+
+    <button onclick="hitungEnergiKinetik()"> <b>Hitung</b></button>
+
+    <div id="output" class="result"></div>
+  </div>
+
+  <script src="kinetik.js"></script>

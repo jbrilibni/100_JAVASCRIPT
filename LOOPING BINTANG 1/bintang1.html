@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>Looping Bintang 1</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 250px;
+  }
+  h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+  }
+  button {
+    background-color: #2980b9;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  button:hover {
+    background-color: #1f618d;
+  }
+  .output {
+    margin-top: 20px;
+    color: #16a085;
+    white-space: pre-line; /* supaya \n jadi baris baru */
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Looping Bintang 1</h2>
+    <button onclick="loopBintang()">Pencet Aku Dong</button>
+    <pre class="output" id="hasil"></pre>
+  </div>
+
+  <script src="bintang1.js"></script>

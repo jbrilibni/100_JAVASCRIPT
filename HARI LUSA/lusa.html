@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Hari Lusa</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #00b894; 
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #dcdde1;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    input[type="text"]:focus {
+      border-color: #00b894;
+      box-shadow: 0 0 6px #00b89455;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #00b894;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #019875;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 17px;
+      color: #e17055; 
+      min-height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>HARI LUSA</h2>
+    <input type="text" id="hariInput" placeholder="masukkan nama hari (contoh: senin)">
+    <button onclick="cekLusa()">Cek Hari Lusa</button>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="lusa.js"></script>
