@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menghitung Tahun Kabisat</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdf6ec; /* warna krem */
+      color: #4e342e; /* coklat tua */
+      text-align: center;
+      padding-top: 50px;
+    }
+    h2 {
+      color: #795548;
+      margin-bottom: 20px;
+    }
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    input {
+      background-color: #fff8e1;
+      color: #5d4037;
+    }
+    button {
+      background-color: #a1887f;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #8d6e63;
+    }
+    .result {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #3e2723;
+      background-color: #fff3e0;
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+      max-width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <h2>PROGRAM MENGHITUNG TAHUN KABISAT</h2>
+  <label for="tahunInput">Masukkan tahun awal:</label><br>
+  <input type="number" id="tahunInput" min="0" placeholder="contoh: 2000"><br>
+  <button onclick="hitungKabisat()">Hitung</button>
+
+  <div class="result" id="hasilKabisat"></div>
+
+  <script src="kabisat.js"></script>

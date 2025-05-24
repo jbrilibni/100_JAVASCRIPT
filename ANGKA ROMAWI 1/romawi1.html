@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Angka Romawi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>==============================</h2>
+  <h1 style="color: brown;">Angka Romawi</h1>
+  <h2>==============================</h2>
+
+  <label for="numberInput"><b>Masukkan bilangan bulat positif (1-10):</b></label><br>
+  <input type="number" id="numberInput" min="1" max="10">
+  <button onclick="konversiRomawi()"><b>Konversi</b></button>
+
+  <div class="result" id="hasilKonversi"></div>
+
+  <script src="romawi2.js"></script>

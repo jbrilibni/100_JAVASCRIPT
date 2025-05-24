@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menghitung Panjang Nama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 50px;
+      text-align: center;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      width: 300px;
+      margin: 0 auto 20px;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hasil {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>MENGHITUNG PANJANG NAMA</h2>
+
+  <input type="text" id="namaInput" placeholder="Masukkan nama anda">
+  <br>
+  <button onclick="hitungPanjang()">Hitung</button>
+
+  <div class="hasil" id="outputHasil"></div>
+
+  <script src="nama1.js"></script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inputan Perkalian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      width: 250px;
+      margin: 0 auto 20px;
+    }
+    input, button {
+      font-size: 16px;
+      padding: 8px;
+      margin: 10px 0;
+      width: 250px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+    button {
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      border: none;
+    }
+    .result {
+      margin-top: 20px;
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 6px;
+      white-space: pre-line;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h2>Inputan Perkalian</h2>
+
+  <input type="number" id="jumlah" placeholder="Masukkan jumlah perkalian" min="1" />
+  <br />
+  <button onclick="tampilkanPerkalian()">Tampilkan</button>
+
+  <div id="hasil"></div>
+
+  <script src="perkalian1.js"></script>

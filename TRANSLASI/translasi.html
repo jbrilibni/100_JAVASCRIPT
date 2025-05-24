@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Translasi Titik</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      text-align: center;
+      padding: 40px;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    input {
+      width: 200px;
+      background-color: #ffffff;
+    }
+
+    button {
+      background-color: #1976d2;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0d47a1;
+    }
+
+    .result {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #1b1b1b;
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Program Translasi Titik</h2>
+
+  <label>Sumbu x:</label><br>
+  <input type="number" id="x"><br>
+
+  <label>Sumbu y:</label><br>
+  <input type="number" id="y"><br>
+
+  <label>Translasi x (a):</label><br>
+  <input type="number" id="a"><br>
+
+  <label>Translasi y (b):</label><br>
+  <input type="number" id="b"><br>
+
+  <button onclick="hitungTranslasi()">Hitung Translasi</button>
+
+  <div class="result" id="hasilTranslasi"></div>
+
+  <script src="translasi.js"></script>

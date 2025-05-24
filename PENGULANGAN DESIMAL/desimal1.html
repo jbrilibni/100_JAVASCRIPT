@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Konversi Pecahan ke Desimal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #fce4ec);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 360px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #1e88e5;
+    }
+
+    h2 {
+      margin-top: 4px;
+      font-size: 18px;
+      color: #d81b60;
+    }
+
+    hr {
+      border: none;
+      height: 3px;
+      background: linear-gradient(to right, #1e88e5, #d81b60);
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+
+    input {
+      padding: 12px;
+      margin: 10px 0;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 2px solid #90caf9;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #d81b60;
+    }
+
+    button {
+      background-color: #43a047;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2e7d32;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+
+    .error {
+      margin-top: 20px;
+      font-size: 16px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #ffebee;
+      color: #c62828;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>KONVERSI PECAHAN</h1>
+    <h2>KE DESIMAL</h2>
+    <hr>
+
+    <input type="number" id="pembilang" placeholder="Masukkan pembilang">
+    <input type="number" id="penyebut" placeholder="Masukkan penyebut">
+    <button onclick="konversi()">Konversi</button>
+
+    <div id="hasil"></div>
+  </div>
+ <script src="persen1.js"></script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jaring-jaring Kerucut</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+      text-align: center;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>==========================</h2>
+  <h1 style="color: red;">====== JARING JARING ======</h1>
+  <h2>==========================</h2>
+
+  <label for="jariJari"><b>Masukkan jari-jari (r):</b></label><br>
+  <input type="number" id="jariJari" min="0"><br><br>
+
+  <label for="sisiMiring"><b>Masukkan sisi miring (s):</b></label><br>
+  <input type="number" id="sisiMiring" min="0"><br><br>
+
+  <label for="tinggi"><b>Masukkan tinggi (t):</b></label><br>
+  <input type="number" id="tinggi" min="0"><br><br>
+
+  <button onclick="hitungKerucut()"><b>Hitung</b></button>
+
+  <div class="result" id="hasilKerucut"></div>
+
+  <script src="jaring1.js"></script>

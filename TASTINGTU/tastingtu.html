@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<title>TASTINGTU - Batu Gunting Kertas</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f0f0f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    margin: 0;
+  }
+  h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: #f7f7f7;
+    text-shadow: 0 0 15px #f7f6f6aa;
+  }
+  .choices {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    max-width: 400px;
+  }
+  .choices button {
+    background-color: #ff6f91;  
+    color: #f7f7fa;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(255,111,145,0.6);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+    flex: 1 1 120px;
+  }
+  .choices button:hover:not(:disabled) {
+    background-color: #ff355e;  
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255,53,94,0.9);
+    color: #fff;
+  }
+  .choices button:disabled {
+    background-color: #555f72;
+    color: #aaaebf;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  .result {
+    margin-top: 50px;
+    background: #1b1b2f;
+    border-radius: 25px;
+    padding: 36px 32px;
+    width: 400px;
+    min-height: 160px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 0 30px #ff6f91aa;
+    white-space: pre-line;
+    user-select: none;
+    letter-spacing: 0.025em;
+    color: #ffdd59;
+  }
+  #playAgain {
+    margin-top: 44px;
+    padding: 18px 60px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background: #3d0bf4;
+    color: #f9f9f9;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 12px 32px rgba(34,209,238,0.9);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: none;
+    user-select: none;
+  }
+  #playAgain:hover {
+    background-color: #19b5ce;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 16px 44px rgba(25,181,206,1);
+  }
+</style>
+</head>
+<body>
+
+<h1>TASTINGTU - Batu Gunting Kertas</h1>
+
+<div class="choices">
+  <button onclick="play('batu')">Batu</button>
+  <button onclick="play('gunting')">Gunting</button>
+  <button onclick="play('kertas')">Kertas</button>
+</div>
+
+<div class="result" id="resultBox">
+  Pilih salah satu: Batu, Gunting, atau Kertas
+</div>
+
+<button id="playAgain" onclick="resetGame()">Main Lagi</button>
+
+<script src="tastingtu.js"></script>

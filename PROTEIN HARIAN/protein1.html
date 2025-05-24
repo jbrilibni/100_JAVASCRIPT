@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Program Jumlah Protein Harian</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 30px auto;
+      background: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px #ccc;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+    label, select, input {
+      display: block;
+      width: 100%;
+      margin: 10px 0 15px;
+      font-size: 16px;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      background-color: #333;
+      color: white;
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .result {
+      margin-top: 20px;
+      background: #eee;
+      padding: 15px;
+      border-radius: 5px;
+      min-height: 50px;
+      font-weight: bold;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <h2>PROGRAM MENENTUKAN JUMLAH PROTEIN HARIAN</h2>
+
+  <label for="kelamin">Jenis kelamin:</label>
+  <select id="kelamin">
+    <option value="">Pilih Coyy</option>
+    <option value="cowok">Cowok</option>
+    <option value="cewek">Cewek</option>
+  </select>
+
+  <label for="umur">Umur:</label>
+  <input type="number" id="umur" min="1" placeholder="Masukan umur Kamu" />
+
+  <button onclick="hitungProtein()">Hitung Protein</button>
+
+  <div class="result" id="hasilProtein"></div>
+
+  <script src="protein1.js"></script>
